@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo para função se composta</title>
+</head>
+<body>
+    <h1>Função SE Composta</h1>
+    <div id="valor"></div>
+    <script>
+        let nota1 = Number(prompt("inserir nota 1"));
+        let nota2 = Number(prompt("inserir nota 2"));
+        let media = ((nota1+nota2)/2);
+        let resultado;
+        
+        if(media > 6) {
+         resultado = "A média superior a média mínima (6,0)"; 
+        } else {
+            if(media == 6){
+                resultado = "Média igual a média mínima (6,0)";
+        } else {
+            resultado = "A média inferior a média mínima (6,0)";
+        }
+        }
+        document.getElementById("valor").innerHTML = resultado
+
+    </script>
+</body>
+</html>

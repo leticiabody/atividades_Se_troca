@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pedido cliente fest food</title>
+</head>
+<body>
+   
+    <h2>Big Super Sanduba R$5,00 reais</h2>
+    <h2>Quase Super Sanduba R$3,00 reais</h2>
+    <h2>Mirradus Sanduba R$1,50 reais</h2>
+    <div id="resultado"></div>
+<script>
+
+    let  bigSuper = "Big Super Sanduba R$5,00 reais";
+    let quaseSuper = "Quase Super Sanduba R$3,00 reais";
+    let mirradusSanduba = "Mirradus Sanduba R$1,50 reais";
+    let resposta;
+
+    let qtdBigSuper = prompt("Qual você escolhe; 1, 2, ou 3?");
+   
+   
+    if(qtdBigSuper == 1 ){
+        resposta = "Você escolheu "+bigSuper 
+    };
+    if(qtdBigSuper == 2){
+        resposta = "Você escolheu "+ quaseSuper
+    };
+    if(qtdBigSuper == 3){
+        resposta = "Você escolheu "+ mirradusSanduba
+    };
+
+    document.getElementById("resultado").innerHTML =  " Seus pedidos são : "+ resposta;
+        
+
+</script>
+
+
+</body>
+</html>

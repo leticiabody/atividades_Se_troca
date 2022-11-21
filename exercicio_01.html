@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exercicio 01</h1>
+    <h2>Sobre um aluno e suas notas</h2>
+    <p id="resultado1"></p>
+    <p id="resultado2"></p>
+   
+    <script>
+       let nomeAluno = prompt("Qual é o nome do aluno.");
+       let nota1 = Number(prompt("Digite a primeira nota."));
+       let nota2 = Number(prompt("Digite a segunda nota."));
+       let nota3 = Number(prompt("Digite a terceira nota."));
+
+       let media = ((nota1 + nota2 + nota3)/3);
+        let msg;
+      
+        if(media >= 6){
+            msg = "O aluno "+ nomeAluno+ " foi aprovado com média "+ media;
+       }else{
+            msg =  "O aluno "+ nomeAluno+ " foi reprovado com média "+ media;
+       }
+       document.getElementById("resultado1").innerHTML = msg
+       
+       let troca;
+
+       if(nota2 > nota1) {
+        troca = nota2;
+        nota2 = nota1;
+        nota1 = troca;
+       }
+      
+       if(nota3 > nota1) {
+        troca = nota3;
+        nota3 = nota1;
+        nota1 = troca;
+       }
+      
+       if(nota3 > nota2) {
+        troca = nota3;
+        nota3 = nota2;
+        nota2 = troca;
+       }
+
+      document.getElementById("resultado2").innerHTML = "A maior nota: " + nota1 + "</br>A segunda nota: " + nota2 + "</br>A terceira nota  :" + nota3; 
+
+    </script>
+
+</body>
+</html>

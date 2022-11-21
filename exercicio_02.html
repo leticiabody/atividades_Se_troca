@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso em ordem decrescente</title>
+</head>
+<body>
+    <h1>Peso de três pessoas em ordem decrescente!</h1>
+    <div id="resposta"></div>
+
+    <script>
+
+        let nome1 = prompt("Informe o primeiro nome");
+        let nome2 = prompt("Informe o segundo nome");
+        let nome3 = prompt("Informe o terceiro nome");
+
+        let peso1 = Number(prompt("Informe o primeiro peso"));
+        let peso2 = Number(prompt("Informe o segundo peso"));
+        let peso3 = Number(prompt("Informe o terceiro peso"));
+
+        let troca;
+
+        if(peso2 > peso1) {
+        troca = peso2;
+        peso2 = peso1;
+        peso1 = troca;
+       }
+      
+       if(peso3 > peso1) {
+        troca = peso3;
+        peso3 = peso1;
+        peso1 = troca;
+       }
+      
+       if(peso3 > peso2) {
+        troca = peso3;
+        peso3 = peso2;
+        peso2 = troca;
+       }
+
+       document.getElementById("resposta").innerHTML = nome1+ " de peso: "+ peso1 +" é o maior."+ " </br>" + nome2 + "de peso: "+ peso2 + " é do meio " +"</br>"+ nome3 + " de peso: "+ peso3 + " é o menor";
+    </script>
+</body>
+</html>

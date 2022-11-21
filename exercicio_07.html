@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>troca do mes de uma data /12 meses </h1>
+    <div id="resposta"></div>
+    <script>
+        let mes1 = "Janeiro" 
+        let mes2 = "fevereiro" 
+        let mes3 = "marco"
+        let mes4 = "abril" 
+        let mes5 = "maio" 
+        let mes6 = "junho" 
+        let mes7 = "julho" 
+        let mes8 = "agost" 
+        let mes9 = "setembro" 
+        let mes10 = "outubro" 
+        let mes11 = "novembro" 
+        let mes12 = "dezembro" 
+        let total;
+    
+        let dia = prompt("Digite o dia")
+        let mes = prompt("Digite o mês")
+        let ano = prompt("Digite o ano")
+
+  
+
+    if(mes == 1)
+        {total = " de " + mes1 +" "}
+    if(mes == 2)
+        {total = " de " + mes2 + " "}
+    if(mes == 3)
+        {total = " de " + mes3 + " "}
+    if(mes == 4)
+        {total = " de " + mes4 + " "}
+    if(mes == 5)
+        {total = " de " + mes5 + " "}
+    if(mes == 6)
+        {total = " de " + mes6 + " "}
+    if(mes == 7)
+        {total = " de " + mes7 + " "}
+    if(mes == 8)
+        {total = " de " + mes8 + " "}
+    if(mes == 9)
+        {total = " de " + mes9 + " "}
+    if(mes == 10)
+        {total = " de " + mes10 + " "}
+    if(mes == 11)
+        {total = " de " + mes11 + " "}
+    if(mes == 12)
+        {total = " de " + mes12 + " "}
+
+    document.getElementById("resposta").innerHTML = "A data correspodente é a segunte : " + dia+  total + ano;
+    </script>
+</body>
+</html>
